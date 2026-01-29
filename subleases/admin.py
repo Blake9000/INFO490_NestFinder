@@ -5,4 +5,3 @@ from .models import Sublease
 @admin.register(Sublease)
 class SubleaseAdmin(admin.ModelAdmin):
     list_display = ("price","address")
-    search_fields = ("address")

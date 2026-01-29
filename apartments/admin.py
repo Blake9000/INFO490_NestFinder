@@ -5,4 +5,3 @@ from .models import Apartment
 @admin.register(Apartment)
 class ApartmentAdmin(admin.ModelAdmin):
     list_display = ("price","address")
-    search_fields = ("address")
