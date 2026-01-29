@@ -4,6 +4,8 @@ from django.db import models
 class Sublease(models.Model):
     price = models.FloatField(null=True, blank=True)
     address = models.TextField()
+    apartments_images = models.ImageField(null=True, blank=True)
+    apartments_url = models.URLField(null=True, blank=True)
     bedrooms = models.IntegerField(null=True, blank=True)
     bathrooms = models.IntegerField(null=True, blank=True)
     sqft_living = models.IntegerField(null=True, blank=True)
